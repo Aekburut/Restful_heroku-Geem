@@ -80,7 +80,7 @@ function DeleteProducts(req, res) {
             console.log('ERROR:', error)
         })
 }
-//=========================================================================================================================
+
 //Users
 function getUsers(req, res) {
     db.any('select * from users')
