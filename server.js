@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-// หน้า แรก
+// หน้าแรก
 app.get('/', function (req, res) {
     res.send('REST is running');
 });
