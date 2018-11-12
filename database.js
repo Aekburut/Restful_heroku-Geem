@@ -2,7 +2,7 @@
 const pgp = require('pg-promise')();
 var db = pgp('postgres://otgkmeypkqzstt:35a8d460ec0f944fc76af4b2f5418baa65694cc8d07a732f1180f85355781521@ec2-54-156-0-178.compute-1.amazonaws.com:5432/d62ksn3bjp2srd?ssl=true');
 
-//Product
+//การทำงานของ Product
 function getAllProducts(req, res) {
     db.any('select * from products')
         .then(function (data) {
@@ -81,7 +81,7 @@ function DeleteProducts(req, res) {
         })
 }
 
-//Users
+//การทำงานของ Users
 function getUsers(req, res) {
     db.any('select * from users')
         .then(function (data) {
@@ -159,7 +159,7 @@ function UpdateUsers(req, res) {
 }
 
 
-//Purchase_item
+//การทำงานของ Purchase_item
 function getPurchase_items(req, res) {
     db.any('select * from purchase_items')
         .then(function (data) {
@@ -236,7 +236,7 @@ function DeletePurchase_items(req, res) {
         
 }
 
-//Purchases
+//การทำงานของ Purchases
 function getPurchase(req, res) {
     db.any('select * from purchases')
         .then(function (data) {
